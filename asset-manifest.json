@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/weather/static/css/main.e033d3dd.css",
-    "main.js": "/weather/static/js/main.c6a4859e.js",
+    "main.js": "/weather/static/js/main.3c770ab4.js",
     "static/media/snow.jpg": "/weather/static/media/snow.5c7d28a1cfbef5ef942f.jpg",
     "static/media/cloudy.jpg": "/weather/static/media/cloudy.8c39490eb98c7d19566d.jpg",
     "static/media/rain.jpg": "/weather/static/media/rain.aab7e26d884b2ec8ce18.jpg",
@@ -10,6 +10,6 @@
   },
   "entrypoints": [
     "static/css/main.e033d3dd.css",
-    "static/js/main.c6a4859e.js"
+    "static/js/main.3c770ab4.js"
   ]
 }
