@@ -35,7 +35,7 @@ function App() {
         }
         const newWeather: ApiType = {
           degree: data.current.temp_c,
-          locationName: data.location.name,
+          locationName: (data.location.name as string).replace("City", ""),
           localTime: data.location.localtime,
           isDay: data.current.is_day === "1",
           conditinon: WeatherConditions.find(s => s.code === Number(data.current.condition.code)) ?? {} as WeatherType,
@@ -62,7 +62,7 @@ function App() {
                     w-screen h-screen bg-center bg-no-repeat bg-cover
                     easing-300
                     before:content-[''] before:w-screen before:h-screen before:bg-black before:absolute before:bg-300"
-      style={{ backgroundImage: background}}
+      style={{ backgroundImage: background }}
     >
       <div className="absolute w-screen h-screen flex flex-col justify-between items-start
                       lg:justify-start lg:items-center">
