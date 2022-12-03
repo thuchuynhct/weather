@@ -13,7 +13,7 @@ function Main({ weather }: { weather: ApiType }) {
         <h1 className='text-[3.5rem]'>{weather.locationName}</h1>
         <span className="text-xl block text-center">{weather.localTime}</span>
       </div>
-      <div className="flex flex-col justify-center">
+      <div className="text-center">
         <img
           className="block m-auto"
           src={require(`../assets/icon/${weather.isDay ? "day" : "night"}/${weather.conditinon.icon}.png`)}
